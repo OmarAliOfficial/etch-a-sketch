@@ -4,10 +4,16 @@ body{
     align-items: center;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0fcfb;
 }
 
 .title{
-
+    font-size: 48px;
+    padding: 20px;
+    border: 1px solid lightblue;
+    border-radius: 42px;
+    background-color: #f0fffd;
+    box-shadow: 10px 10px 5px lightblue;
 }
 
 .header {
@@ -24,6 +30,7 @@ body{
     align-items: center;
     width: 500px;
     padding: 24px;
+    cursor: pointer;
 }
 
 
@@ -32,4 +39,19 @@ body{
     border: 1px solid black;
     height: 500px;
     width: 500px;
+}
+
+.warning{
+    padding: 8px 24px;
+}
+
+.black, .clear, .random {
+    border: 1px solid lightblue;
+    padding: 8px 22px;
+    border-radius: 28px;
+}
+
+.black:hover, .clear:hover, .random:hover {
+    background-color: #bbfaf5;
+    box-shadow: 10px 10px 5px lightblue;
 }

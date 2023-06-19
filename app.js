@@ -1,8 +1,18 @@
-const container = document.querySelector('.grid');
+const grid = document.querySelector('.grid');
+
+
 function makeGrid(size){
-    container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
-    container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
-    console.log("Hi!")
+    grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+    grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+
+    for(let i = 0; i < size*size; i++){
+        const div = document.createElement('div');
+        div.className = "cell";
+        div.style.border = "1px solid black";
+        grid.appendChild(div);
+    }
 }
+
+
 
 makeGrid(20);
